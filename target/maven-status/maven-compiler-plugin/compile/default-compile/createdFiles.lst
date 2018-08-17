@@ -1,0 +1,10 @@
+br/com/effect/teste/repository/AlunoRepository.class
+br/com/effect/teste/Boot.class
+br/com/effect/teste/controllers/AlunoController.class
+br/com/effect/teste/service/AlunoService.class
+br/com/effect/teste/controllers/HomeController.class
+br/com/effect/teste/service/TurmaService.class
+br/com/effect/teste/controllers/TurmaController.class
+br/com/effect/teste/repository/TurmaRepository.class
+br/com/effect/teste/domain/Aluno.class
+br/com/effect/teste/domain/Turma.class

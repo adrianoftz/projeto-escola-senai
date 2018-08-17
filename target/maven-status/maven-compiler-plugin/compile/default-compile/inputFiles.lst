@@ -1,0 +1,10 @@
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/service/AlunoService.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/controllers/HomeController.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/service/TurmaService.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/domain/Turma.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/Boot.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/domain/Aluno.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/repository/AlunoRepository.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/repository/TurmaRepository.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/controllers/AlunoController.java
+/home/adriano/dev/teste1/src/main/java/br/com/effect/teste/controllers/TurmaController.java
