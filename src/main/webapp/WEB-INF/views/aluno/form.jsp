@@ -21,7 +21,7 @@
 
         <tr>
             <td><b>Data de Nascimento</b></td>
-            <td><input type='text' name='dataNascimento' class='form-control' size="20" required/></td>
+            <td><input type='date' name='dataNascimento' class='form-control' size="20" required/></td>
 
         </tr>
 
