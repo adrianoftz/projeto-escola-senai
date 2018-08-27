@@ -19,6 +19,7 @@
                 <th><b>Nome</b></th>
                 <th><b>Matricula</b></th>
                 <th><b>Data de Nascimento</b></th>
+                <th class="text-center"><b>Turma</b></th>
                 <th></th>
             </tr>
             </thead>
@@ -28,6 +29,7 @@
                     <td><c:out value="${aluno.nome}"></c:out></td>
                     <td><c:out value="${aluno.matricula}"></c:out></td>
                     <td><c:out value="${aluno.dataNascimento}"></c:out></td>
+                    <td class="text-center"><c:out value="${aluno.turma.numero} - ${aluno.turma.periodo}"></c:out></td>
 
                     <td class="text-right">
                         <a href="/aluno/${aluno.id}/edit">
