@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import java.util.Set;
 
 @Controller
 @RequestMapping("/aluno")
@@ -73,12 +74,12 @@ public class AlunoController {
     public ModelAndView update(@RequestParam("id") long id,
                                @RequestParam("nome") String nome, @RequestParam("matricula") Integer matricula,
                                @RequestParam("dataNascimento") String dataNascimento,
-                               @RequestParam("turma") Turma turma) {
+                               @RequestParam("turmas") Set<Turma> turmas) {
         Aluno aluno = alunoService.findOne(id);
         aluno.setNome(nome);
         aluno.setMatricula(matricula);
         aluno.setDataNascimento(dataNascimento);
-        aluno.setTurma(turma);
+        aluno.setTurmas(turmas);
         alunoService.save(aluno);
         return new ModelAndView("redirect:/aluno");
     }

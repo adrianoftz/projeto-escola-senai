@@ -28,12 +28,13 @@
         <tr>
             <td><b>Turma</b></td>
             <td>
-                <select id="turma" name="turma" class="custom-select">
-                    <option>Escolha uma Turma</option>
+                <%--<select id="turma" name="turma" class="custom-select">--%>
+                        <%--<option>Escolha uma Turma</option>--%>
                     <c:forEach items="${turmas}" var="turma">
-                        <option value="${turma.id}">${turma.numero} - ${turma.periodo}</option>
+                        <%--<option value="${turma.id}">${turma.numero} - ${turma.periodo}</option>--%>
+                        <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
                     </c:forEach>
-                </select>
+                <%--</select>--%>
             </td>
 
         </tr>

@@ -4,6 +4,7 @@ package br.com.effect.teste.domain;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "aluno")
@@ -22,9 +23,11 @@ public class Aluno {
     @Column(name = "data_nascimento")
     private String dataNascimento;
 
-    @ManyToOne
-    @JoinColumn(name = "turma_id")
-    private Turma turma;
+    @ManyToMany
+    @JoinTable(name = "aluno_turma",
+            joinColumns = @JoinColumn(name="aluno_id", referencedColumnName="id"),
+            inverseJoinColumns = @JoinColumn(name="turma_id", referencedColumnName="id"))
+    private Set<Turma> turmas;
 
     public Long getId() {
         return id;
@@ -58,12 +61,12 @@ public class Aluno {
         this.dataNascimento = dataNascimento;
     }
 
-    public Turma getTurma() {
-        return turma;
+    public Set<Turma> getTurmas() {
+        return turmas;
     }
 
-    public void setTurma(Turma turma) {
-        this.turma = turma;
+    public void setTurmas(Set<Turma> turmas) {
+        this.turmas = turmas;
     }
 
     @Override
